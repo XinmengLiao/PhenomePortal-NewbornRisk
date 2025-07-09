@@ -13,7 +13,7 @@ bcftools index ${sampleID}.biallelic.vcf.gz --threads 10
 bcftools merge -l nbrisk.txt -Oz -o newborn103_merged.vcf.gz --threads 10 -W
 
 # change missing allele into reference allele
-bcftools +setGT newborn103_merged.vcf.gz -- -t . -n 0/0 -Oz -o newborn103_merged_ref.vcf.gz
+bcftools +setGT newborn103_merged.vcf.gz -- -t . -n 0/0 | bgzip > newborn103_merged_ref.vcf.gz
 
 # Annotated batch sample with VEP v113
 ```
@@ -30,9 +30,7 @@ bcftools index ${sampleID}.vep.biallelic.vcf.gz --threads 10
 bcftools merge -l nbrisk.txt -Oz -o newborn103_vep_merged.vcf.gz --threads 10 -W
 
 # change missing allele into reference allele
-bcftools +setGT newborn103_vep_merged.vcf.gz -- -t . -n 0/0 -Oz -o newborn103_vep_merged_ref.vcf.gz
-
-# Annotated batch sample with VEP v113
+bcftools +setGT newborn103_vep_merged.vcf.gz -- -t . -n 0/0 | bgzip > newborn103_vep_merged_ref.vcf.gz
 ```
 
 #### Python and configuration file to decipher the merged files. 
