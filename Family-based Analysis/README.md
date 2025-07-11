@@ -1,14 +1,11 @@
-Family-based anlaysis could be conducted in in two ways:
-1) Single family
-2) Batch family
+Family-based anlaysis could be only be conducted for a single family by `gatk` or `gatk4` installed with conda.
 
-Both ways will use `slivar` installed by conda
-
-#### Input files for slivar
-1) All families bed file: `Data/family.bed`
-2) All families merged vcf files: `Data/family11_merged.vcf.gz`
-
-#### Running slivar
+####  GATK PhaseByTransmission
 ```bash
-
+gatk PhaseByTransmission \
+  -R /mnt/storage_pool/Genomics/VarXOmics/tools/picard/hg38.fa \
+  -V F1_merged_rmmissingalt_biallelic.vcf.gz \
+  --pedigree F1.ped \
+  -O F1_gatk.vcf.gz \
+  --default-qual 30.0
 ```
