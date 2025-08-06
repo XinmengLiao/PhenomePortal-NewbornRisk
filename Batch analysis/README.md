@@ -53,4 +53,7 @@ bcftools +setGT newborn103_vep_merged.vcf.gz -- -t . -n 0/0 | bgzip > newborn103
 #### Vairnat Details
 <img width="1671" height="908" alt="image" src="https://github.com/user-attachments/assets/a88217e8-b8e3-48b3-97ec-0425e16a2371" />
 
+### PGx 
+<img width="876" height="518" alt="image" src="https://github.com/user-attachments/assets/e871abfc-f74d-4ae6-82e3-c609446cdab9" />
+
 
