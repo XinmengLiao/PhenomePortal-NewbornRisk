@@ -46,7 +46,7 @@ bcftools +setGT newborn103_vep_merged.vcf.gz -- -t . -n 0/0 | bgzip > newborn103
 
 #### Summary 
 <img width="887" height="662" alt="image" src="https://github.com/user-attachments/assets/2c52380a-966a-4a4a-85bc-02607de819f5" />
-<img width="867" height="599" alt="image" src="https://github.com/user-attachments/assets/de068e9e-7def-4e05-97be-7ac8d24598f4" />
+<img width="877" height="602" alt="image" src="https://github.com/user-attachments/assets/58499410-8405-4685-876b-8b3198f31d80" />
 <img width="1670" height="493" alt="image" src="https://github.com/user-attachments/assets/8356c5dc-4076-4bdb-bc73-b4a254f78cea" />
 
 
