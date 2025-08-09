@@ -11,6 +11,9 @@ bcftools view -e 'ALT = "."' ${family}.vcf.gz -Oz -o ${family}_rmmissingalt.vcf.
 
 # split into biallelic
 bcftools norm -m -both -Oz -o ${family}_biallelic.vcf.gz ${family}_rmmissingalt.vcf.gz --threads 20
+
+# remove the duplicated variant
+bcftools norm -d exact -Oz -o ${family}_biallelic_nodup.vcf.gz ${family}_biallelic.vcf.gz --threads 20
 ```
 
 #### 2. VEP annotation
