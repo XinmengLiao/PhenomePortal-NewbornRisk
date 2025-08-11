@@ -1,9 +1,10 @@
-Family based analysis will be performed simply by Python and R scripts, since the GATK and slivar always fail. 
-
-### Input files
-1. Family merged vcf.gz file: `F4_merged.vcf.gz`
-2. Family ped file: `F4.ped`
-
+### Overview
+1. Script for family analysis: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/NewbornRisk_family.sh`
+2. Example output files: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/F4`
+3. Input file for example:
+   - Merged VCF file: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/F4/F4_merged.vcf.gz`
+   - Family information PED file: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/F4/F4.ped`
+  
 ### Command for analysis
 ```bash
 newbornrisk='/mnt/storage_pool/Genomics/Genome/NewbornRisk'
@@ -12,7 +13,8 @@ bash NewbornRisk_family.sh \
   -o $newbornrisk/examples/F4 \
   -v $newbornrisk/examples/F4/F4_merged.vcf.gz \
   --ped $newbornrisk/examples/F4/F4.ped \
-  --only-pass yes --genome GRCH38 --genedb TR
+  --only-pass yes --genome GRCH38 --genedb TR \
+  --fork 20 --threads 20
 ```
 * feels like the --fork and --threads do not work, it stops the VEP processes
 
