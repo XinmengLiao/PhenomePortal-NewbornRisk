@@ -1,7 +1,9 @@
-This is the script for analysing merged batch samples' vcf file. 
-
-### Inputs:
-- compressed merged vcf file (need `vcf.gz`)
+### Overview
+1. Script for batch samples analysis: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/NewbornRisk_batch.sh`
+2. Example output files: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/newborn103`
+3. Input file for example:
+  - Merged VCF file: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/newborn103/newborn103_merged.vcf.gz`
+  - SampleIDs and Genders: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/newborn103/newborn103gender.txt`
 
 ### Command for anlaysis
 ```bash
