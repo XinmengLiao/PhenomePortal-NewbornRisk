@@ -1,5 +1,5 @@
 ## Overview 
-1. Script for family analysis: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/NewbornRisk_single.sh`
+1. Script for single analysis: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/NewbornRisk_single.sh`
 2. Example output files: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/single`
 3. Input file for example:
   - Merged VCF file: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/single/P0064_1203.vcf.gz`
