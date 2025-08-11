@@ -1,8 +1,8 @@
 Family based analysis will be performed simply by Python and R scripts, since the GATK and slivar always fail. 
 
 ### Input files
-1. Family merged vcf.gz file
-2. Family ped file
+1. Family merged vcf.gz file: `F4_merged.vcf.gz`
+2. Family ped file: `F4.ped`
 
 ### Command for analysis
 ```bash
@@ -19,20 +19,19 @@ bash NewbornRisk_family.sh \
 ### UI design
 #### Summary 
 - Family Information: `F4_family_information.txt`
-- Screen-positive Neonatal Diseases and Disease carrier status (Caused by ClinVar and ACMG (likely) pathogenic variants): `F4_plp_brief.txt`
-- Variant Pedigree Analysis: pedigree figures for each variant presented in `F4_BRCA1_pedigree_plot.png`, `F4_C8B_pedigree_plot.png`, and other files ends with `pedigree_plot.png`
-
-* here change the filename into Gene_Variant_plot.png
-
+- Variant Highlights (three tabs):
+  - Screen-positive Neonatal Diseases and Disease carrier status (Caused by ClinVar and ACMG (likely) pathogenic variants): `F4_plp_brief.txt`
+  - Loss-of-function: `F4_high_brief.txt`
+  - Other predicted variants: `F4_predict_brief.txt`
+- Variant Pedigree Analysis: pedigree figures for each variant presented in files ends with `pedigree_plot.png`, such as `F4_BRCA1_c.2197_2201del_pedigree_plot.png` and `F4_C8B_c.1282C>T_pedigree_plot.png` \
+(These pedigree plots are only generated for P/LP variants. There could be a RUN function for users to generate plots for other variants.)
 <img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/e5e2181f-5fee-4816-a1d9-479c980d8f26" />
 <img width="1914" height="737" alt="image" src="https://github.com/user-attachments/assets/e662948e-4134-4d15-8f65-dc333222be90" />
 
 #### Overall Variant Statistics
-- VEP statistics and figures: `F4_vep_annotated.vcf.gz_summary.html`
+- VEP statistics and figures: `F4_vep_annotated.vcf.gz_summary.html`. The figures and tables could be used directly and presented in the web server. 
 - Newborn Variant Statistics: `Kid0Pattern_P001_263_Variant_statistics.png`
-- Loss-of-function variants and other predicted variants 
-  - Loss-of-function: `F4_high_brief.txt`
-  - Other predicted variants: `F4_predict_brief.txt`
+
 
 
 #### Variant Details
