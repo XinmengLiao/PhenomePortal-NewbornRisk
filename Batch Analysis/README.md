@@ -45,6 +45,9 @@ bash NewbornRisk_batch.sh \
 <img width="877" height="602" alt="image" src="https://github.com/user-attachments/assets/58499410-8405-4685-876b-8b3198f31d80" />
 <img width="1670" height="493" alt="image" src="https://github.com/user-attachments/assets/8356c5dc-4076-4bdb-bc73-b4a254f78cea" />
 
+### Variant Statistics
+Tables and figures are generated from VEP: `newborn103_vep_annotated.vcf.gz_summary.html` \
+We can directly use these resutls and show in our web server. 
 
 ### Vairnat Details
 - Variant Detail table: `newborn103_vep_merged_rmmissingalt_biallelic2.txt`
