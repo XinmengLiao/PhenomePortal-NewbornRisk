@@ -1,4 +1,5 @@
 ### Overview
+NewbornRisk location on server: `/mnt/storage_pool/Genomics/Genome/NewbornRisk`
 1. Script for family analysis: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/NewbornRisk_family.sh`
 2. Example output files: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/F4`
 3. Input file for example:
