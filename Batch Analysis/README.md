@@ -1,4 +1,5 @@
 ### Overview
+NewbornRisk location on server: `/mnt/storage_pool/Genomics/Genome/NewbornRisk`
 1. Script for batch samples analysis: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/NewbornRisk_batch.sh`
 2. Example output files: `/mnt/storage_pool/Genomics/Genome/NewbornRisk/examples/newborn103`
 3. Input file for example:
