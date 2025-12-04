@@ -50,7 +50,19 @@
   d) GUARDIAN \
   e) NC NEXUS \
   f) NBScreening \
-  g) Customized list (user should upload their own list in fixed format) 
+  g) ACMG secondary findings v3.3 \
+  f) ACMG expanded carrier screening \
+  h) Customized list (user should upload their own list in fixed format) 
 
 Screening lists could be found in the local server `/path_to_NewbornRisk/Datasets/genelists/`
    
+
+## R-scripts for downstream data management 
+The latest version is edited on 2025-12-04
+1. Batch20251203.R for cohort-level analysis
+2. Newborn_Single20251203.R for individual-level analysis (newborns screening)
+3. Carrier_Single20251203.R for  individual-level analysis (carrier screening)
+4. Newborn_Family20251203.R for family-level analysis (newborn screening family) 
+5. Carrier_Couple20251203.R for couple-level analysis (carrier screening couple)
+6. PGS_DensityPlot20251203.R for managing the PGS output table and creating the density plots for both family or cohort. (for newborn and carrier screening)
+7. Pedigree_Analysis_subset20251203.R for generating the pedigree plots for variant of interest.
