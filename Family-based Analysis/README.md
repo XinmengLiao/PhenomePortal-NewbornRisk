@@ -46,8 +46,9 @@ Users could choose their variant of interest to generate additional pedigree plo
 Script for this function: `Pedigree_Analysis_subset20251203.R`
 
 #### 5) PGS information
-1. Table of the family PGS scores: `rwgs-F1_pgs.txt`
-2. Report for the PGS score: `report.html`
+1. Table of the family PGS scores: `cohort_PGS.txt`
+2. Density plot compared with the reference populations: `PGS_Znorm1_DensityPlot.png` and `PGS_Znorm2_DensityPlot.png`
+3. Report for the PGS score: `report.html`
 
 #### 6) PGx information
 Results from PharmCat in HTML and/or JSON file. Have not done yet. 
